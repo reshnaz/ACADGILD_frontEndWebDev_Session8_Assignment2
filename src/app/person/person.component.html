@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="row">
+      <section class="content">
+          <div class="col-md-8 col-md-offset-2">
+              <h1 style="text-align: center;">List of Persons</h1>
+              <hr/>
+              <div class="panel panel-default">
+                  <div class="panel-body">
+                      <div class="table-resposive">
+                          <table class="table table-striped">
+                              <tbody>
+                                  <!-- Loop through input array -->
+                                  <tr *ngFor="let personList of personDetail">
+                                      <td style="text-align: left;">
+                                          <!-- Displaying Person Name from array using string interpolation -->
+                                        <h4>{{personList?.pName}}</h4>
+                                      </td>
+                                      <td style="text-align: left;">
+                                          <!-- Displaying Person Age from array using string interpolation -->
+                                        <h4>{{personList?.pAge}}</h4>
+                                      </td>
+                                  </tr>
+                              </tbody>
+                          </table>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+  </div>
+</div>
